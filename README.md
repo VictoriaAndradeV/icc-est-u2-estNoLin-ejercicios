@@ -1,3 +1,121 @@
+### Informe de Ejercicios de Árboles Binarios
+
+Estudiante: Victoria Andrade
+
+Este documento describe los objetivos, el desarrollo, los aprendizajes y las conclusiones de los cuatro ejercicios realizados sobre árboles binarios.
+
+## Ejercicio 01: Inserción en Árbol Binario de Búsqueda (BST)
+
+Objetivo:
+
+Implementar un algoritmo que permita insertar nodos en un Árbol Binario de Búsqueda (BST) y mostrar sus elementos en orden.
+
+Desarrollo:
+
+Se creó la clase InsertarBST con métodos:
+
+insert(int value): inserta recursivamente un valor en el BST.
+
+insertRec(Node node, int value): lógica recursiva que posiciona cada nodo según su valor.
+
+printInOrder(): recorre el árbol en orden (izquierda-raíz-derecha) y muestra los valores.
+
+En App, se insertaron los valores de ejemplo [5, 3, 7, 2, 4, 6, 8] y se imprimió el recorrido in-order.
+
+## Lo que se aprendió:
+- Fundamentos de la estructura de datos BST.
+- Implementación de inserción recursiva respetando la propiedad de búsqueda.
+- Recorrido in-order para obtener una lista ordenada de valores.
+
+# Conclusión:
+
+Se validó que la inserción respeta la ordenación y que el recorrido in-order devuelve una secuencia creciente de los valores.
+
+## Ejercicio 02: Inversión (Espejo) de un Árbol Binario
+
+# Objetivo:
+
+Crear una función que invierta (haga espejo) la estructura de un árbol binario.
+
+# Desarrollo:
+
+Se implementó la clase ArbolInvertido con el método:
+
+invert(Node node): recorre el árbol en post-order, invierte recursivamente los subárboles y luego intercambia los hijos izquierdo y derecho.
+
+En App, se construyó un BST de ejemplo, se imprimió su forma con líneas ASCII y luego se invirtió aplicando invert, imprimiendo el resultado.
+
+# Lo que se aprendió:
+
+- Recorridos post-order como patrón para transformar árboles.
+
+- Técnicas de manipulación de punteros/refs para intercambiar subárboles.
+
+- Reutilización de métodos de impresión para validar cambios.
+
+# Conclusión:
+
+La inversión en sitio modifica la estructura del árbol de manera correcta, obteniendo su espejo.
+
+## Ejercicio 03: Listas Enlazadas por Nivel
+
+# Objetivo:
+
+Generar una lista enlazada por cada nivel de un árbol binario.
+
+# Desarrollo:
+
+Se creó la clase ListLevels con el método:
+
+listByLevel(Node root): utiliza un recorrido BFS con una cola (Queue) para agrupar nodos por niveles en LinkedList<Node>.
+
+En App, tras invertir el árbol del ejercicio anterior, se invocó listByLevel y se imprimieron las listas de cada nivel con la flecha →.
+
+# Lo que se aprendió:
+
+- Recorridos por niveles (BFS) y su aplicación para agrupar nodos.
+- Uso de estructuras auxiliares (colas y listas enlazadas) para representar niveles.
+- Formato de salida que facilita la visualización de la arquitectura del árbol.
+
+# Conclusión:
+
+El recorrido BFS permite extraer fácilmente la estructura por niveles, generando sublistas que pueden usarse en algoritmos de visualización o procesamiento paralelo por profundidad.
+
+## Ejercicio 04: Profundidad Máxima de un Árbol Binario
+
+# Objetivo:
+
+Calcular la profundidad máxima (longitud del camino más largo desde la raíz hasta una hoja) de un árbol binario.
+
+# Desarrollo:
+
+Se implementó la clase DepthCalculator con el método:
+
+maxDepth(Node node): recursivamente calcula la profundidad de los subárboles izquierdo y derecho y retorna el mayor más uno.
+
+En App, se construyó manualmente un árbol con la forma proporcionada y se imprimió el resultado de maxDepth.
+
+# Lo que se aprendió:
+
+- Aplicación de recursión para descomponer problemas en subproblemas (subárboles).
+- Cálculo de métricas estructurales de un árbol (profundidad, altura).
+- Interpretación de la recursión como acumulación de niveles.
+
+# Conclusión:
+
+El algoritmo recursivo proporciona de forma directa y eficiente la profundidad máxima de un árbol binario, con complejidad O(N) donde N es el número de nodos.
+
+## Conclusiones Generales
+
+La práctica integral de estas operaciones (inserción, inversión, recorrido por niveles y cálculo de profundidad) ofrece una visión completa de los algoritmos fundamentales sobre árboles binarios.
+
+El manejo de referencias y recursión es clave para desarrollar manipulaciones estructurales en árboles.
+
+El uso de diferentes patrones de recorrido (in-order, post-order, BFS) demuestra la versatilidad para resolver problemas concretos.
+
+Estas implementaciones sientan las bases para estructuras y algoritmos más avanzados, como árboles balanceados (AVL, Red-Black) o recorridos especializados.
+
+
 # Estructuras No Lineales – Ejercicios Árboles
 
 Este proyecto contiene la solución a cuatro ejercicios prácticos sobre estructuras de datos tipo árbol binario, como parte del aprendizaje de estructuras no lineales en Java. Cada ejercicio se encuentra organizado en su propia carpeta, siguiendo la convención de paquetes y buenas prácticas.
