@@ -1,4 +1,4 @@
-### Informe de Ejercicios de Árboles Binarios
+# Informe de Ejercicios de Árboles Binarios
 
 Estudiante: Victoria Andrade
 
@@ -6,11 +6,11 @@ Este documento describe los objetivos, el desarrollo, los aprendizajes y las con
 
 ## Ejercicio 01: Inserción en Árbol Binario de Búsqueda (BST)
 
-Objetivo:
+### Objetivo:
 
 Implementar un algoritmo que permita insertar nodos en un Árbol Binario de Búsqueda (BST) y mostrar sus elementos en orden.
 
-Desarrollo:
+### Desarrollo:
 
 Se creó la clase InsertarBST con métodos:
 
@@ -22,22 +22,22 @@ printInOrder(): recorre el árbol en orden (izquierda-raíz-derecha) y muestra l
 
 En App, se insertaron los valores de ejemplo [5, 3, 7, 2, 4, 6, 8] y se imprimió el recorrido in-order.
 
-## Lo que se aprendió:
+### Lo que se aprendió:
 - Fundamentos de la estructura de datos BST.
 - Implementación de inserción recursiva respetando la propiedad de búsqueda.
 - Recorrido in-order para obtener una lista ordenada de valores.
 
-# Conclusión:
+### Conclusión:
 
 Se validó que la inserción respeta la ordenación y que el recorrido in-order devuelve una secuencia creciente de los valores.
 
 ## Ejercicio 02: Inversión (Espejo) de un Árbol Binario
 
-# Objetivo:
+### Objetivo:
 
 Crear una función que invierta (haga espejo) la estructura de un árbol binario.
 
-# Desarrollo:
+### Desarrollo:
 
 Se implementó la clase ArbolInvertido con el método:
 
@@ -45,7 +45,7 @@ invert(Node node): recorre el árbol en post-order, invierte recursivamente los 
 
 En App, se construyó un BST de ejemplo, se imprimió su forma con líneas ASCII y luego se invirtió aplicando invert, imprimiendo el resultado.
 
-# Lo que se aprendió:
+### Lo que se aprendió:
 
 - Recorridos post-order como patrón para transformar árboles.
 
@@ -53,17 +53,17 @@ En App, se construyó un BST de ejemplo, se imprimió su forma con líneas ASCII
 
 - Reutilización de métodos de impresión para validar cambios.
 
-# Conclusión:
+### Conclusión:
 
 La inversión en sitio modifica la estructura del árbol de manera correcta, obteniendo su espejo.
 
 ## Ejercicio 03: Listas Enlazadas por Nivel
 
-# Objetivo:
+### Objetivo:
 
 Generar una lista enlazada por cada nivel de un árbol binario.
 
-# Desarrollo:
+### Desarrollo:
 
 Se creó la clase ListLevels con el método:
 
@@ -71,23 +71,23 @@ listByLevel(Node root): utiliza un recorrido BFS con una cola (Queue) para agrup
 
 En App, tras invertir el árbol del ejercicio anterior, se invocó listByLevel y se imprimieron las listas de cada nivel con la flecha →.
 
-# Lo que se aprendió:
+### Lo que se aprendió:
 
 - Recorridos por niveles (BFS) y su aplicación para agrupar nodos.
 - Uso de estructuras auxiliares (colas y listas enlazadas) para representar niveles.
 - Formato de salida que facilita la visualización de la arquitectura del árbol.
 
-# Conclusión:
+### Conclusión:
 
 El recorrido BFS permite extraer fácilmente la estructura por niveles, generando sublistas que pueden usarse en algoritmos de visualización o procesamiento paralelo por profundidad.
 
 ## Ejercicio 04: Profundidad Máxima de un Árbol Binario
 
-# Objetivo:
+### Objetivo:
 
 Calcular la profundidad máxima (longitud del camino más largo desde la raíz hasta una hoja) de un árbol binario.
 
-# Desarrollo:
+### Desarrollo:
 
 Se implementó la clase DepthCalculator con el método:
 
@@ -95,13 +95,13 @@ maxDepth(Node node): recursivamente calcula la profundidad de los subárboles iz
 
 En App, se construyó manualmente un árbol con la forma proporcionada y se imprimió el resultado de maxDepth.
 
-# Lo que se aprendió:
+### Lo que se aprendió:
 
 - Aplicación de recursión para descomponer problemas en subproblemas (subárboles).
 - Cálculo de métricas estructurales de un árbol (profundidad, altura).
 - Interpretación de la recursión como acumulación de niveles.
 
-# Conclusión:
+### Conclusión:
 
 El algoritmo recursivo proporciona de forma directa y eficiente la profundidad máxima de un árbol binario, con complejidad O(N) donde N es el número de nodos.
 
